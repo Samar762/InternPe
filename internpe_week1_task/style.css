@@ -1,0 +1,141 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #73fa5f, #fad0c4, #fad0c4, #e8a6fc, #a1c4fd, #c2e9fb, #c2e9fb, #a1c4fd);
+    background-size: 300% 300%;
+    animation: gradientBackground 15s ease infinite;
+    color: #333;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.calculator {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 360px;
+    padding: 20px;
+}
+
+.display {
+    background: #f5f5f5;
+    color: #333;
+    text-align: right;
+    padding: 20px;
+    font-size: 2.5em;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.btn {
+    border: none;
+    font-size: 1.5em;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), inset 0 -4px 0 rgba(0, 0, 0, 0.2);
+    color: #fff;
+    background: linear-gradient(145deg, #ff9a9e, #fad0c4); /* Default gradient */
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), inset 0 -4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), inset 0 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.btn.number {
+    background: linear-gradient(145deg, #ff9a9e, #fad0c4);
+}
+
+.btn.function {
+    background: linear-gradient(145deg, #fbc2eb, #a6c1ee);
+    color: #333;
+}
+
+.btn.operator {
+    background: linear-gradient(145deg, #f9d423, #ff4e50);
+}
+
+.btn.clear {
+    background: linear-gradient(145deg, #a1c4fd, #c2e9fb);
+}
+
+.btn.equal {
+    grid-column: span 2;
+    background: linear-gradient(145deg, #66bb6a, #81c784);
+    color: white;
+}
+
+.equal:hover {
+    background: linear-gradient(145deg, #5ba65e, #75be76);
+}
+
+.equal:active {
+    background: linear-gradient(145deg, #4f8f53, #6aae64);
+}
+.btn.function,
+.btn.operator,
+.btn.equal {
+    
+}
+
+.btn.function {
+    background: linear-gradient(145deg, #fbc2eb, #a6c1ee);
+    color: #333;
+}
+
+.btn.operator {
+    background: linear-gradient(145deg, #f9d423, #ff4e50);
+}
+
+.btn.equal {
+    grid-column: span 2;
+    background: linear-gradient(145deg, #66bb6a, #81c784);
+    color: white;
+}
+
+.equal:hover {
+    background: linear-gradient(145deg, #5ba65e, #75be76);
+}
+
+.equal:active {
+    background: linear-gradient(145deg, #4f8f53, #6aae64);
+}
+.footer {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #0a0000;
+}
