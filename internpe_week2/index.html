@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanBloom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>UrbanBloom</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Signup</a>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search for products...">
+            <button id="search-button">Search</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="carousel">
+                <div class="carousel-slide">
+                    <img src="hero1.jpg" alt="Hero Image 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="hero2.jpg" alt="Hero Image 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="hero3.jpg" alt="Hero Image 3">
+                </div>
+            </div>
+        </section>
+
+        <section id="highlights">
+            <h2>Featured Products</h2>
+            <div class="highlight-product" data-id="1" data-name="Product 1" data-price="10">
+                <img src="product1.jpg" alt="Product 1">
+                <h3>T-shirt</h3>
+                <p>Price: $10</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="highlight-product" data-id="2" data-name="Product 2" data-price="20">
+                <img src="product2.jpg" alt="Product 2">
+                <h3>Black t-shirt</h3>
+                <p>Price: $20</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="highlight-product" data-id="3" data-name="Product 3" data-price="30">
+                <img src="product3.jpg" alt="Product 3">
+                <h3>Green T-shirt</h3>
+                <p>Price: $30</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="highlight-product" data-id="4" data-name="Product 4" data-price="40">
+                <img src="product4.jpg" alt="Product 4">
+                <h3>Bodycon black dress</h3>
+                <p>Price: $40</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="highlight-product" data-id="5" data-name="Product 5" data-price="50">
+                <img src="product5.jpg" alt="Product 5">
+                <h3>Slit dress</h3>
+                <p>Price: $50</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="highlight-product" data-id="6" data-name="Product 6" data-price="60">
+                <img src="product6.jpg" alt="Product 6">
+                <h3>Denim jeans</h3>
+                <p>Price: $60</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="highlight-product" data-id="7" data-name="Product 7" data-price="70">
+                <img src="product7.jpg" alt="Product 7">
+                <h3>Nike black t-shirt</h3>
+                <p>Price: $70</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="highlight-product" data-id="8" data-name="Product 8" data-price="80">
+                <img src="product8.jpg" alt="Product 8">
+                <h3>Mixer</h3>
+                <p>Price: $80</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="highlight-product" data-id="9" data-name="Product 9" data-price="90">
+                <img src="product9.jpg" alt="Product 9">
+                <h3>Dell laptop</h3>
+                <p>Price: $90</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="highlight-product" data-id="10" data-name="Product 10" data-price="100">
+                <img src="product10.jpg" alt="Product 10">
+                <h3>Headphone</h3>
+                <p>Price: $100</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+
+        <section id="categories">
+            <h2>Shop by Category</h2>
+            <div class="category" data-category="electronics">
+                <img src="category-electronics.jpg" alt="Electronics">
+                <h3>Electronics</h3>
+            </div>
+            <div class="category" data-category="fashion">
+                <img src="category-fashion.jpg" alt="Fashion">
+                <h3>Fashion</h3>
+            </div>
+            <div class="category" data-category="home">
+                <img src="category-home.jpg" alt="Home">
+                <h3>Home</h3>
+            </div>
+            <div class="category" data-category="beauty">
+                <img src="category-beauty.jpg" alt="Beauty">
+                <h3>Beauty</h3>
+            </div>
+        </section>
+
+        <section id="best-sellers">
+            <h2>Best Sellers</h2>
+            <div class="best-seller" data-id="11" data-name="Product 11" data-price="110">
+                <img src="product11.jpg" alt="Product 11">
+                <h3>peanut butter</h3>
+                <p>Price: $110</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="best-seller" data-id="12" data-name="Product 12" data-price="120">
+                <img src="product12.jpg" alt="Product 12">
+                <h3>Guitar</h3>
+                <p>Price: $120</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="best-seller" data-id="13" data-name="Product 13" data-price="130">
+                <img src="product13.jpg" alt="Product 13">
+                <h3>Television</h3>
+                <p>Price: $130</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="best-seller" data-id="14" data-name="Product 14" data-price="140">
+                <img src="product14.jpg" alt="Product 14">
+                <h3>Smartwatch</h3>
+                <p>Price: $140</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="best-seller" data-id="15" data-name="Product 15" data-price="150">
+                <img src="product15.jpg" alt="Product 15">
+                <h3>Oven</h3>
+                <p>Price: $150</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial">
+                <img src="customer1.jpg" alt="Customer 1">
+                <p>"I ordered a pair of noise-canceling headphones from ElectroMart.com and couldn't be happier with the experience. The product arrived quickly and was well-packaged. The headphones themselves are fantastic – the sound quality is superb, and they effectively cancel out background noise. Customer service was also very responsive when I had a question about the warranty. Highly recommend ElectroMart for tech purchases!"</p>
+                <h3>TOM</h3>
+            </div>
+            <div class="testimonial">
+                <img src="customer2.jpg" alt="Customer 2">
+                <p>"I recently bought a summer dress from StyleSavvy.com. The ordering process was easy, and the site has a great selection of trendy items. My dress arrived within the estimated delivery time and looked just like the photos online. The fabric quality is decent for the price, though the sizing runs a bit small. Overall, a positive shopping experience with a good variety of stylish options."</p>
+                <h3>TESSA</h3>
+            </div>
+            <div class="testimonial">
+                <img src="customer3.jpg" alt="Customer 3">
+                <p>"I purchased a set of ceramic dinner plates from HomeEssentialsShop.com. The site was user-friendly, and I found what I needed quickly. Shipping took longer than expected, and one plate arrived chipped despite being wrapped well. Customer service was polite and offered a partial refund. The plates are beautiful, but the shipping delay and damage were disappointing. Mixed feelings about the overall experience."</p>
+                <h3>JOHN</h3>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to My E-Commerce Site. We offer a wide range of products across various categories. Our mission is to provide the best shopping experience for our customers.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Samar's E-Commerce Site</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
