@@ -1,0 +1,96 @@
+/* Body and Container */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #83a4d4, #b6fbff);
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+    color: #343a40;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Game Board */
+#game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(7, 70px);
+    grid-gap: 5px;
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cell {
+    width: 70px;
+    height: 70px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.cell:hover {
+    transform: scale(1.1);
+}
+
+.cell.red {
+    background-color: #ff4b5c;
+}
+
+.cell.yellow {
+    background-color: #ffd700;
+}
+
+/* Status Message */
+#status {
+    font-size: 1.2em;
+    color: #121111;
+    margin: 15px 0;
+    text-shadow: 1px 1px 2px rgba(81, 58, 58, 0.929);
+}
+
+/* Reset Button */
+#reset {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#reset:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
